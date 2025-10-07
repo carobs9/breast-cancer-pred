@@ -274,7 +274,3 @@ data = load_breast_cancer()
   - [Feature Selection and Data Visualization](https://www.kaggle.com/code/kanncaa1/feature-selection-and-data-visualization)
   - scikit-learn documentation
   - Keras documentation
-
----
-
-*This project was created as part of a data science portfolio to demonstrate machine learning and deep learning capabilities.*
