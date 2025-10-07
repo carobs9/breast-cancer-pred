@@ -1,30 +1,28 @@
-# 🎗️ Breast Cancer Prediction using Deep Learning
+# Breast Cancer Prediction using Deep Learning
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-orange.svg)](https://www.tensorflow.org/)
+[![Keras](https://img.shields.io/badge/Keras-2.10+-red.svg)](https://keras.io/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-green.svg)](https://scikit-learn.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > A comprehensive machine learning project implementing neural networks for breast cancer classification using the Wisconsin Breast Cancer Dataset, achieving high accuracy through feature engineering and model optimization.
 
 ## Table of Contents
-- [Project Overview](#-project-overview)
-- [Key Features](#-key-features)
-- [Technical Skills Demonstrated](#-technical-skills-demonstrated)
-- [Dataset](#-dataset)
-- [Methodology](#-methodology)
-- [Results](#-results)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Technologies Used](#-technologies-used)
-- [Future Improvements](#-future-improvements)
-- [Contact](#-contact)
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Technical Skills Demonstrated](#technical-skills-demonstrated)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Future Improvements](#future-improvements)
 
 ## Project Overview
 
 This project demonstrates end-to-end machine learning workflow for medical diagnostics, specifically classifying breast tumors as malignant or benign. The project showcases proficiency in:
-- **Deep Learning**: Custom neural network architecture using Keras/TensorFlow
+- **Deep Learning**: Custom neural network architecture using Keras
 - **Feature Engineering**: Multiple feature selection techniques (correlation analysis, RFE, PCA)
 - **Data Analysis**: Comprehensive exploratory data analysis with advanced visualizations
 - **Model Optimization**: Regularization techniques, hyperparameter tuning, and cross-validation
@@ -66,7 +64,7 @@ Early and accurate detection of breast cancer can significantly improve patient 
 |----------|--------|
 | **Programming** | Python, NumPy, Pandas |
 | **Machine Learning** | Supervised Learning, Classification, Feature Selection |
-| **Deep Learning** | TensorFlow, Keras, Neural Networks, Regularization |
+| **Deep Learning** | Keras, Neural Networks, Regularization |
 | **Data Science** | EDA, Statistical Analysis, Data Preprocessing |
 | **Visualization** | Matplotlib, Seaborn, Advanced Plotting |
 | **ML Tools** | scikit-learn, train-test splitting, cross-validation |
@@ -165,8 +163,8 @@ breast-cancer-pred/
 │
 ├── breast_cancer_prediction.ipynb   # Main deep learning model
 ├── data_eda.ipynb                   # Feature selection & EDA
-├── README.md                        # Project documentation
-└── data.csv                         # Dataset (if applicable)
+├── requirements.txt                 # Project dependencies
+└── README.md                        # Project documentation
 ```
 
 ## Installation
@@ -191,12 +189,12 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. **Install dependencies**
 ```bash
-pip install tensorflow keras scikit-learn pandas numpy matplotlib seaborn jupyter
+pip install -r requirements.txt
 ```
 
-### Alternative: Requirements File
+### Alternative: Manual Installation
 ```bash
-pip install -r requirements.txt
+pip install keras scikit-learn pandas numpy matplotlib seaborn jupyter
 ```
 
 ## Usage
@@ -225,7 +223,7 @@ data = load_breast_cancer()
 ## Technologies Used
 
 ### Core Libraries
-- **TensorFlow/Keras**: Deep learning framework
+- **Keras**: Deep learning framework
 - **scikit-learn**: Machine learning utilities, feature selection
 - **Pandas**: Data manipulation and analysis
 - **NumPy**: Numerical computing
@@ -262,7 +260,21 @@ data = load_breast_cancer()
 - [ ] Cloud deployment (AWS/GCP/Azure)
 
 ### Documentation
-- [ ] Add requirements.txt file
 - [ ] Create detailed API documentation
 - [ ] Add unit tests
 - [ ] Include model performance benchmarks
+
+---
+
+## Acknowledgments
+
+- Dataset: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic))
+- Inspiration: Feature selection techniques from Kaggle community
+- References: 
+  - [Feature Selection and Data Visualization](https://www.kaggle.com/code/kanncaa1/feature-selection-and-data-visualization)
+  - scikit-learn documentation
+  - Keras documentation
+
+---
+
+*This project was created as part of a data science portfolio to demonstrate machine learning and deep learning capabilities.*
